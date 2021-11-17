@@ -19,6 +19,7 @@ export const styles = StyleSheet.create({
     },
     content:{
         marginTop:-40,
+        paddingHorizontal:50
     },
     tittle:{
         color:theme.colors.heading,
