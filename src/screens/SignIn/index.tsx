@@ -3,7 +3,6 @@ import {
     View,
     Text, 
     Image,
-    StatusBar
     } from 'react-native'
 
 import {ButtonIcon} from '../../components/ButtonIcon'
@@ -14,16 +13,11 @@ export function SignIn(){
     
     return(
         <View style ={styles.container}>
-            <StatusBar
-            barStyle='light-content'
-            backgroundColor="transparent"
-            translucent
-            />
             <Image source={IllustrationImg}
             style={styles.image}
             />
             <View style={styles.content}>
-                <Text style={ styles.tittle}>
+                <Text style={ styles.title}>
                     Conecte-se{'\n'} 
                     e organize suas {'\n'}
                     jogatinas
