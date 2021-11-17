@@ -24,13 +24,13 @@ export function SignIn(){
             />
             <View style={styles.content}>
                 <Text style={ styles.tittle}>
-                    Organize{'\n'}
-                    suas jogatinas {'\n'}
-                    facilmente
+                    Conecte-se{'\n'} 
+                    e organize suas {'\n'}
+                    jogatinas
                 </Text>
                 
                 <Text style = { styles.subtitle}>
-                    CrieP grupos para jogar seus games {'\n'}
+                    Crie grupos para jogar seus games {'\n'}
                     favoritos com seus amigos 
                 </Text>
             <ButtonIcon 
