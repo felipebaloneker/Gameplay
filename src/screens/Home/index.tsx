@@ -15,9 +15,7 @@ export function Home(){
 			</View>
 
 			<View>
-				<CategorySelect>
-
-				</CategorySelect>
+				<CategorySelect/>
 			</View>
 		</View>
 	)
