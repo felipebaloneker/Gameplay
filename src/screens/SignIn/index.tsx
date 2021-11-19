@@ -1,20 +1,28 @@
-import React, { useState } from  'react'
+import React, { useState } from  'react';
 import {
     View,
     Text, 
     Image,
-    } from 'react-native'
+    } from 'react-native';
 
-import {ButtonIcon} from '../../components/ButtonIcon'
-import IllustrationImg from "../../assets/illustration.png"
+import { useNavigation } from '@react-navigation/native';
+
+import {ButtonIcon} from '../../components/ButtonIcon';
+import IllustrationImg from "../../assets/illustration.png";
 import {styles} from './styles';
 
 export function SignIn(){
-    
+    const navigation = useNavigation();
+
+    function handleSignIn(){
+        navigation.navigate('Home');
+    }
     return(
         <View style ={styles.container}>
-            <Image source={IllustrationImg}
+            <Image 
+            source={IllustrationImg}
             style={styles.image}
+            resizeMode="stretch"
             />
             <View style={styles.content}>
                 <Text style={ styles.title}>
@@ -30,6 +38,7 @@ export function SignIn(){
             <ButtonIcon 
                 title="Entrar com o discord"
                 activeOpacity={0.7}
+                onPress={handleSignIn}
             />
             </View>
         </View>

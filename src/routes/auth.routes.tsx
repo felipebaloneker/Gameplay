@@ -1,14 +1,25 @@
 import React from 'react';
-import {createStackNavigator } from '@react-navigation/stack'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import { Home } from '../screens/Home';
 import { SignIn } from '../screens/SignIn';
 
-const { Navigator, Screen } = createStackNavigator();
+export type RootStackParamList = {
+    Home: undefined;
+    SignIn: undefined;
+  };
+const { Navigator, Screen } = createNativeStackNavigator<RootStackParamList>();
 
 export function AuthRoutes() {
     return(
-        <Navigator>
+        <Navigator
+        screenOptions={{
+            headerShown: false,
+            contentStyle: {
+                backgroundColor: 'transparent',
+            }
+            }}
+        >
             <Screen
                 name='SignIn'
                 component={SignIn}
