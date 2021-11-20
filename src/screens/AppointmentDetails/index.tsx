@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Button, View , Text, ImageBackground} from 'react-native'
+import React  from 'react';
+import { View , Text, ImageBackground} from 'react-native'
 import { styles } from './styles'
 
 import {Fontisto} from '@expo/vector-icons';
