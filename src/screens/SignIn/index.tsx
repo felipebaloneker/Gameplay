@@ -8,6 +8,7 @@ import {
 import { useNavigation } from '@react-navigation/native';
 
 import {ButtonIcon} from '../../components/ButtonIcon';
+import {Background} from '../../components/Background';
 import IllustrationImg from "../../assets/illustration.png";
 import {styles} from './styles';
 
@@ -18,6 +19,7 @@ export function SignIn(){
         navigation.navigate('Home');
     }
     return(
+        <Background>
         <View style ={styles.container}>
             <Image 
             source={IllustrationImg}
@@ -41,5 +43,6 @@ export function SignIn(){
             />
             </View>
         </View>
+        </Background>
     )
 }

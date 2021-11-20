@@ -2,8 +2,9 @@ import React from 'react';
 
 import {
     View
-} from 'react-native-view';
-import { styles } from 'react-native-styles';
+} from 'react-native';
+
+import { styles } from './styles';
 
 export function ListDivider(){
     return(

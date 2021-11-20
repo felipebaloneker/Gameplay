@@ -6,7 +6,7 @@ import TrainingSvg from '../assets/training.svg'
 export const categories =[
 
     {id: '1', title:'Ranqueda',icon:RankedSvg},
-    {id: '2', title:'Ranqueda',icon:DuelSvg},
-    {id:'3', title:'Ranqueda',icon:FunSvg},
-    {id:'4', title:'Ranqueda',icon:TrainingSvg},
+    {id: '2', title:'Duel 1x1',icon:DuelSvg},
+    {id:'3', title:'Diversão',icon:FunSvg},
+    {id:'4', title:'Training',icon:TrainingSvg},
 ]
